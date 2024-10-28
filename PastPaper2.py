@@ -78,3 +78,40 @@ def replace_phrase(s):
     return srt
 
 print(replace_phrase(sen))
+
+
+#Two Question Quiz
+score = 0
+
+name = input("enter your name: ")
+
+print("welcome {} to the quiz".format(name))
+
+print("Select A-D\n")
+
+
+q1 = input("""Question 1: A data type used to store data values in key value pairs
+A) Dictionary 
+B)  List
+C)  Set
+D)  Tuple
+""")
+if q1.upper() == "A":
+    print("Correct answer")
+    score += 1
+else:
+    print("Incorrect answer")
+
+q2 = input("""Question 2: Which data type stores multiple items in a single variable and is ordered and unchanged
+A) Dictionary
+B)  Set
+C)  Tuple
+D)  List""")
+
+if q2.upper() == "D":
+    print("Correct answer")
+    score += 1
+else:
+    print("Incorrect answer")
+
+print("Your final score is {}".format(score))
